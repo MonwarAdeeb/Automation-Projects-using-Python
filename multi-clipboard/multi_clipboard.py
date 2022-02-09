@@ -15,3 +15,5 @@ def load_data(filepath):
         with open(filepath, "r") as f:
             data = json.load(f)
             return data
+    except:
+        return {}
