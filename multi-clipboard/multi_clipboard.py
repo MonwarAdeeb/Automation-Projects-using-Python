@@ -17,3 +17,8 @@ def load_data(filepath):
             return data
     except:
         return {}
+
+
+if len(sys.argv) == 2:
+    command = sys.argv[1]
+    data = load_data(SAVED_DATA)
