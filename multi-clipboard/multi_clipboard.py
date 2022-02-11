@@ -22,3 +22,9 @@ def load_data(filepath):
 if len(sys.argv) == 2:
     command = sys.argv[1]
     data = load_data(SAVED_DATA)
+
+    if command == "save":
+        key = input("Enter a key: ")
+        data[key] = clipboard.paste()
+        save_data(SAVED_DATA, data)
+        print("Data saved!")
