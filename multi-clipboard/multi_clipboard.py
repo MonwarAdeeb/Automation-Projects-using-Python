@@ -30,3 +30,6 @@ if len(sys.argv) == 2:
         print("Data saved!")
     elif command == "load":
         key = input("Enter a key: ")
+        if key in data:
+            clipboard.copy(data[key])
+            print("Data copied to clipboard.")
