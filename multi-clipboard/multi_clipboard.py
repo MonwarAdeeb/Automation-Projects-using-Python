@@ -33,3 +33,5 @@ if len(sys.argv) == 2:
         if key in data:
             clipboard.copy(data[key])
             print("Data copied to clipboard.")
+        else:
+            print("Key does not exist.")
