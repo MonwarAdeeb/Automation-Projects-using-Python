@@ -35,3 +35,5 @@ if len(sys.argv) == 2:
             print("Data copied to clipboard.")
         else:
             print("Key does not exist.")
+    elif command == "list":
+        print(data)
