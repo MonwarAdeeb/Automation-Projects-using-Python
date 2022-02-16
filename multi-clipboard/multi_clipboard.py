@@ -37,3 +37,5 @@ if len(sys.argv) == 2:
             print("Key does not exist.")
     elif command == "list":
         print(data)
+    else:
+        print("Unknown command")
