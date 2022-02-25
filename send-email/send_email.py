@@ -12,3 +12,12 @@ message = EmailMessage()
 message["From"] = sender_email
 message["To"] = receiver_email
 message["Subject"] = subject
+
+html = f"""
+<html>
+    <body>
+        <h1>{subject}</h1>
+        <p>{body}</p>
+    </body>
+</html>
+"""
