@@ -21,3 +21,5 @@ html = f"""
     </body>
 </html>
 """
+
+message.add_alternative(html, subtype="html")
