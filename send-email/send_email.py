@@ -25,3 +25,5 @@ html = f"""
 message.add_alternative(html, subtype="html")
 
 context = ssl.create_default_context()
+
+print("Sending Automated Email!")
